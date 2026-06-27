@@ -33,8 +33,8 @@ class Housing(BaseModel):
 
       #==========================================
     
-@app.post("/login/")
-async def login(housing: Annotated[Housing, Form()]):
+@app.post("/prediction/")
+async def prediction(housing: Annotated[Housing, Form()]):
     print()
    
     print()
