@@ -32,6 +32,9 @@ class Housing(BaseModel):
     ocean_proximity: str
 
       #==========================================
+@app.get("/health")
+async def health():
+    return {"status": "ok", "model_loaded": loaded_model is not None}
     
 @app.post("/prediction/")
 async def prediction(housing: Annotated[Housing, Form()]):
