@@ -1,5 +1,7 @@
 This project uses the well-known California Housing dataset to allow users to enter details of a hypothetical residence and predicts a sale price.  Having been containerized, it can run locally or you can push it to an EC2 instance and make it available globally. 
 
+![Swagger UI](swagger_screenshotH.png)
+
 Stack: Built with FastAPI, scikit-learn, Docker, and deployed to AWS EC2 with MLflow for experiment tracking.
 
 Model Performance:
